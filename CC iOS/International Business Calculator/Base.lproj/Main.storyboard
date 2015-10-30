@@ -170,25 +170,15 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="QWS-zx-H3Q"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-2e-fAm">
-                                <rect key="frame" x="124" y="758" width="148" height="42"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3j-wP-JVG">
-                                <rect key="frame" x="561" y="757" width="126" height="43"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZN-zu-21Q">
-                                <rect key="frame" x="504" y="766" width="51" height="31"/>
+                                <rect key="frame" x="235" y="770" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="soundSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="1y2-js-75h"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOUND ON" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psa-sg-Osk">
-                                <rect key="frame" x="254" y="757" width="244" height="43"/>
+                                <rect key="frame" x="29" y="761" width="200" height="43"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -248,14 +238,13 @@
                                     <action selector="tappedNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAb-s9-SDE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgl-xA-MWH">
-                                <rect key="frame" x="37" y="758" width="73" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3j-wP-JVG">
+                                <rect key="frame" x="555" y="757" width="126" height="43"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJ9-d7-9ME">
-                                <rect key="frame" x="695" y="766" width="51" height="31"/>
+                                <rect key="frame" x="689" y="766" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="dayNightSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="dcJ-Mp-3ex"/>
@@ -267,8 +256,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="clearButton" destination="nRD-4S-iQX" id="bUi-nj-rki"/>
-                        <outlet property="dateLabel" destination="qg6-2e-fAm" id="2dv-rm-ldw"/>
-                        <outlet property="dateStatic" destination="xgl-xA-MWH" id="MKt-u9-LLa"/>
                         <outlet property="dayNightLabel" destination="E3j-wP-JVG" id="VxD-U3-HfX"/>
                         <outlet property="divideButton" destination="ymf-Og-8LY" id="fo8-nu-Ml3"/>
                         <outlet property="eight" destination="BMz-cF-ihg" id="661-jv-GMl"/>

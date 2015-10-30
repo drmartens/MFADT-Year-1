@@ -120,15 +120,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var valueLabel: UILabel!
     
-    @IBOutlet weak var dateLabel: UILabel!
-    
     @IBOutlet weak var soundLabel: UILabel!
     
     @IBOutlet weak var dayNightLabel: UILabel!
     
     @IBOutlet weak var pickerOutlet: UIPickerView!
-    
-    @IBOutlet weak var dateStatic: UILabel!
 
 //MARK - UIActions
     
@@ -158,10 +154,8 @@ class ViewController: UIViewController {
             
             //Label Changes
             valueLabel.textColor = UIColor.whiteColor()
-            dateLabel.textColor = UIColor.whiteColor()
             soundLabel.textColor = UIColor.whiteColor()
             dayNightLabel.textColor = UIColor.whiteColor()
-            dateStatic.textColor = UIColor.whiteColor()
             dayNightLabel.text = "NIGHT"
             
             //speech
@@ -191,11 +185,9 @@ class ViewController: UIViewController {
             
             //Label Changes
             valueLabel.textColor = UIColor.darkGrayColor()
-            dateLabel.textColor = UIColor.blackColor()
             soundLabel.textColor = UIColor.blackColor()
             dayNightLabel.textColor = UIColor.blackColor()
             dayNightLabel.text = "DAY"
-            dateStatic.textColor = UIColor.blackColor()
             
             //speech
             speakThisString("You are in day mode")
@@ -218,10 +210,7 @@ class ViewController: UIViewController {
             formatter5.numberStyle = NSNumberFormatterStyle.CurrencyStyle
             formatter5.locale = NSLocale(localeIdentifier: currentCurrency)
             valueLabel.text = formatter5.stringFromNumber(num)
-            valueString = valueString.stringByAppendingString(str)
               speakThisString(valueLabel.text!)
-            lastButtonMultiply = false
-            lastButtonDivide = false
         }
         
         if (num == 0 && total == 0)
@@ -484,14 +473,6 @@ class ViewController: UIViewController {
         let utterance = AVSpeechUtterance(string: "Welcome to my international calculator app, bitches")
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         mySpeechSynth.speakUtterance(utterance)
-      
-//MARK - Date
-        let todaysDate:NSDate = NSDate()
-        let dateFormatter:NSDateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "HH:mm a"
-        dateFormatter.locale = NSLocale(localeIdentifier: currentCurrency)
-        let DateInFormat:String = dateFormatter.stringFromDate(todaysDate)
-        dateLabel.text = DateInFormat
         
         
 //Mark - Button Styling (want to happen from beginning)
