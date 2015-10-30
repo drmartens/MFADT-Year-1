@@ -5,16 +5,16 @@
 
 # Screen Shot
 App Icon Screen 
-(https://github.com/drmartens/danamartens/blob/master/CC%20iOS/homeappicon.PNG) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/homeappicon.PNG) 
 
 Day Mode 
-(https://github.com/drmartens/danamartens/blob/master/CC%20iOS/daymode.PNG) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/daymode.PNG) 
 
 Night Mode
-(https://github.com/drmartens/danamartens/blob/master/CC%20iOS/nightmode.PNG) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/nightmode.PNG) 
 
 Demo Video
-(https://github.com/drmartens/danamartens/blob/master/CC%20iOS/homeappicon.PNG)](https://youtu.be/tTM2R2U3Cn0)
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/homeappicon.PNG)](https://youtu.be/tTM2R2U3Cn0)
 
 
 
