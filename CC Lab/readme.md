@@ -18,11 +18,8 @@ ScreenShot 2
 Screenshot3
 ![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20Lab/ss3.png)
 
-Screenshot4
-![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20Lab/ss3.png)
-
 
 Video
 
-[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/ipadappyoutubess.png)](https://www.youtube.com/embed/0SBRhd2yWkU
+[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20Lab/ss4.png)](https://www.youtube.com/embed/0SBRhd2yWkU
 )
