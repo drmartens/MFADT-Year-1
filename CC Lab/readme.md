@@ -8,6 +8,8 @@
 
 4. Credits: WiiMote & OfOSC Tutorial by Vincent Brujin: https://sites.google.com/site/ofauckland/examples/18-wiimote-via-ofxosc & OpenFrameworks Audio Reactive Shapes Tutorial: https://www.youtube.com/watch?v=IiTsE7P-GDs&list=PL4neAtv21WOmrV8z9rSzL20QpdLU1zJLr&index=15
 
+You can view my blog post for this project at: https://danamartensmfadt.wordpress.com/2015/11/28/ms1-final-project-new-prototypes/#jp-carousel-1073
+
 # Screen Shot
 ScreenShot 1
 ![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20Lab/ss1.png) 
