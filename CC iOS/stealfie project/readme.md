@@ -21,12 +21,4 @@ Main Interface
 Stealfie Functionality Demo Video 
 
 
-[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfievideodemoss.png)](https://www.youtube.com/watch?v=WOwWdoNqxjU)
-
-
-
-
-
-
-  
- 
+[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfievideodemoss.png)](https://youtu.be/WOwWdoNqxjU)
