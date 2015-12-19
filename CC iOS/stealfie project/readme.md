@@ -20,7 +20,7 @@ Main Interface
 
 Stealfie Functionality Demo Video 
 
-[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/ipadappyoutubess.png)](https://youtu.be/WOwWdoNqxjU)
+[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfievideodemoss.png)](https://youtu.be/WOwWdoNqxjU)
 
 
 
