@@ -7,17 +7,20 @@
 
 # Screen Shot
 App Icon 
-![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/ipad2x152152.png) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfieappicon.png) 
+
+Launch Screen
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfie.png) 
 
 Home Screen 
-![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/daymode.PNG) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfiehomescreen.png) 
 
 Main Interface
-![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/nightmode.PNG) 
+![ScreenShot](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/stealfie%20project/stealfieinterface.png) 
 
 Stealfie Functionality Demo Video 
 
-[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/ipadappyoutubess.png)](https://youtu.be/jL2s1pCAAqQ)
+[![Demo Video](https://github.com/drmartens/danamartens/blob/master/CC%20iOS/ipadappyoutubess.png)](https://youtu.be/WOwWdoNqxjU)
 
 
 
