@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7ML-mo-ISb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stealfie-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StealfieV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wV8-g3-e94">
+                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stealfiecircle" translatesAutoresizingMaskIntoConstraints="NO" id="xoX-NY-LAt">
+                                        <rect key="frame" x="8" y="8" width="584" height="456"/>
+                                    </imageView>
+                                    <toolbar clearsContextBeforeDrawing="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niw-p0-hb4">
+                                        <rect key="frame" x="0.0" y="428" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.37647058820000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <items>
+                                            <barButtonItem title="Natural" id="N0w-8J-ZXj">
+                                                <connections>
+                                                    <action selector="naturalFiltersPressed:" destination="BYZ-38-t0r" id="S4u-tU-wb6"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="kVb-ff-qNY"/>
+                                            <barButtonItem title="Artistic" id="1xC-Yv-Zw3">
+                                                <connections>
+                                                    <action selector="artisticFiltersPressed:" destination="BYZ-38-t0r" id="cLI-hq-nre"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="PvO-UQ-c0u"/>
+                                            <barButtonItem title="Fantasy" id="OZT-US-L9U">
+                                                <connections>
+                                                    <action selector="fantasyFiltersPressed:" destination="BYZ-38-t0r" id="eOZ-s4-3DB"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.54509803921568623" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xoX-NY-LAt" firstAttribute="top" secondItem="wV8-g3-e94" secondAttribute="topMargin" id="584-4L-zMz"/>
+                                    <constraint firstAttribute="bottom" secondItem="niw-p0-hb4" secondAttribute="bottom" id="L5T-v4-9eh"/>
+                                    <constraint firstItem="niw-p0-hb4" firstAttribute="leading" secondItem="wV8-g3-e94" secondAttribute="leading" id="OBO-Lb-9gw"/>
+                                    <constraint firstItem="xoX-NY-LAt" firstAttribute="bottom" secondItem="wV8-g3-e94" secondAttribute="bottomMargin" id="V7v-Eu-IQn"/>
+                                    <constraint firstAttribute="trailing" secondItem="niw-p0-hb4" secondAttribute="trailing" id="g30-oe-bpG"/>
+                                    <constraint firstItem="xoX-NY-LAt" firstAttribute="leading" secondItem="wV8-g3-e94" secondAttribute="leadingMargin" id="sHW-AF-m1j"/>
+                                    <constraint firstItem="niw-p0-hb4" firstAttribute="centerX" secondItem="xoX-NY-LAt" secondAttribute="centerX" id="xpf-9B-AGU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdO-hK-ph9">
+                                <rect key="frame" x="274" y="539" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="asv-Ra-wt2"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CAMERA" image="cameraicon" backgroundImage="cameraiconwhite">
+                                    <color key="titleColor" red="0.99093727692457179" green="0.9805705283470928" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="importCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lU4-UR-BoH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43u-k5-wGi">
+                                <rect key="frame" x="526" y="545" width="60" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QTa-0W-meC"/>
+                                </constraints>
+                                <state key="normal" image="filterimage">
+                                    <color key="titleColor" red="0.98567370601971882" green="0.89761624724110067" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIV-rD-7aG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en8-m0-lJh">
+                                <rect key="frame" x="11" y="544" width="51" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="g8P-12-Uea"/>
+                                </constraints>
+                                <state key="normal" image="shareicon"/>
+                                <connections>
+                                    <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lvk-cH-vEh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="43u-k5-wGi" secondAttribute="bottom" constant="8" symbolic="YES" id="4qT-lG-TWi"/>
+                            <constraint firstItem="wV8-g3-e94" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6KC-8M-8mW"/>
+                            <constraint firstAttribute="trailing" secondItem="wV8-g3-e94" secondAttribute="trailing" id="6bK-lN-ejI"/>
+                            <constraint firstItem="tdO-hK-ph9" firstAttribute="top" secondItem="wV8-g3-e94" secondAttribute="bottom" constant="3" id="9YX-Wd-wUd"/>
+                            <constraint firstItem="tdO-hK-ph9" firstAttribute="centerX" secondItem="wV8-g3-e94" secondAttribute="centerX" id="Csj-db-X41"/>
+                            <constraint firstItem="tdO-hK-ph9" firstAttribute="centerY" secondItem="en8-m0-lJh" secondAttribute="centerY" id="QDc-mO-qjk"/>
+                            <constraint firstItem="43u-k5-wGi" firstAttribute="top" secondItem="wV8-g3-e94" secondAttribute="bottom" constant="9" id="TS8-J2-oZD"/>
+                            <constraint firstItem="en8-m0-lJh" firstAttribute="top" secondItem="wV8-g3-e94" secondAttribute="bottom" constant="8" symbolic="YES" id="UmQ-2C-4ya"/>
+                            <constraint firstItem="en8-m0-lJh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="YXi-2U-ikD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="43u-k5-wGi" secondAttribute="trailing" constant="-6" id="i39-as-s8O"/>
+                            <constraint firstItem="wV8-g3-e94" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rFI-Tf-Uad"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tdO-hK-ph9" secondAttribute="bottom" constant="8" symbolic="YES" id="t8c-xl-8c6"/>
+                            <constraint firstItem="wV8-g3-e94" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vvr-su-hYn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stealfie" id="TDC-6K-R2s">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YqC-H4-cFO"/>
+                        <barButtonItem key="leftBarButtonItem" image="backicon" id="And-2o-oGc">
+                            <color key="tintColor" red="0.1333333333" green="0.5450980392" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="7ML-mo-ISb" kind="presentation" id="vc8-Yv-5QM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artisticButton" destination="1xC-Yv-Zw3" id="l4I-XN-gfj"/>
+                        <outlet property="fantasyButton" destination="OZT-US-L9U" id="If6-KY-UiC"/>
+                        <outlet property="imageView" destination="xoX-NY-LAt" id="1f8-AL-I3D"/>
+                        <outlet property="naturalButton" destination="N0w-8J-ZXj" id="6We-gR-k8a"/>
+                        <outlet property="toolBar" destination="niw-p0-hb4" id="eBI-L4-J9u"/>
+                        <segue destination="xhw-N3-w24" kind="presentation" identifier="toWeb" id="Ttn-1n-QBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="231"/>
+        </scene>
+        <!--You've Been Stealfied!-->
+        <scene sceneID="jbD-u3-1ni">
+            <objects>
+                <viewController id="mSS-0A-ayP" customClass="WebViewController" customModule="StealfieV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="klU-Zj-L9B"/>
+                        <viewControllerLayoutGuide type="bottom" id="p4h-bj-qDK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u09-Tc-ziw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-yZ-ES4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kdl-yZ-ES4" secondAttribute="trailing" id="Xvd-uu-IAf"/>
+                            <constraint firstItem="Kdl-yZ-ES4" firstAttribute="top" secondItem="u09-Tc-ziw" secondAttribute="top" id="nHb-1T-Jer"/>
+                            <constraint firstItem="Kdl-yZ-ES4" firstAttribute="bottom" secondItem="p4h-bj-qDK" secondAttribute="top" id="nrd-U4-p3L"/>
+                            <constraint firstItem="Kdl-yZ-ES4" firstAttribute="leading" secondItem="u09-Tc-ziw" secondAttribute="leading" id="w2k-SB-iI5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="You've Been Stealfied!" id="Hye-wJ-N1I">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="5xn-gK-4sq">
+                            <connections>
+                                <segue destination="t0E-aj-XZ2" kind="presentation" id="yP0-c3-fAo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="Kdl-yZ-ES4" id="dfH-nt-nI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hN-iV-ze6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617" y="237"/>
+        </scene>
+        <!--UINavigationController-->
+        <scene sceneID="uA6-wl-Ect">
+            <objects>
+                <navigationController title="UINavigationController" automaticallyAdjustsScrollViewInsets="NO" id="t0E-aj-XZ2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGe-2C-WVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mSZ-eH-yfU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eb-gR-dm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624" y="-511"/>
+        </scene>
+        <!--InitialViewController-->
+        <scene sceneID="Ok9-KT-YJG">
+            <objects>
+                <viewController id="7ML-mo-ISb" userLabel="InitialViewController" customClass="initialViewController" customModule="StealfieV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j52-os-4uZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyn-C9-B7T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qj8-yK-q4p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a selfie, add unique filters, share!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MO-dC-UeH">
+                                <rect key="frame" x="48" y="358" width="505" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stealfiecircle" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-8A-NZ4">
+                                <rect key="frame" x="197" y="121" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="6Eb-5k-Q8e"/>
+                                    <constraint firstAttribute="height" constant="207" id="Tyq-8J-Bnd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW7-bA-5hU">
+                                <rect key="frame" x="220" y="562" width="160" height="30"/>
+                                <state key="normal" title="TERMS &amp; CONDITIONS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zpz-m2-VXW" kind="presentation" id="Kva-fo-QYV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Stealfie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-JN-rIH">
+                                <rect key="frame" x="160" y="72" width="281" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="xkT-i5-3Mx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15F-EY-9H9">
+                                <rect key="frame" x="270" y="464" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ZNA-rH-e2T"/>
+                                    <constraint firstAttribute="width" secondItem="15F-EY-9H9" secondAttribute="height" multiplier="10:9" constant="4.4444444444444429" id="bdC-AZ-IWa"/>
+                                    <constraint firstAttribute="height" constant="50" id="jHP-P0-j2d"/>
+                                </constraints>
+                                <state key="normal" title="TAKE A SELFIE" image="cameraiconwhite">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t0E-aj-XZ2" kind="presentation" id="V1R-TZ-vRL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pyn-C9-B7T" firstAttribute="top" secondItem="fW7-bA-5hU" secondAttribute="bottom" constant="8" symbolic="YES" id="9Gp-ax-5eM"/>
+                            <constraint firstItem="9MO-dC-UeH" firstAttribute="centerX" secondItem="S7U-8A-NZ4" secondAttribute="centerX" id="AmX-xM-YCU"/>
+                            <constraint firstItem="fW7-bA-5hU" firstAttribute="centerX" secondItem="Qj8-yK-q4p" secondAttribute="centerX" id="JCJ-fr-Ka1"/>
+                            <constraint firstItem="fW7-bA-5hU" firstAttribute="top" secondItem="15F-EY-9H9" secondAttribute="bottom" constant="48" id="RVI-YR-8Yg"/>
+                            <constraint firstItem="AfH-JN-rIH" firstAttribute="top" secondItem="j52-os-4uZ" secondAttribute="bottom" constant="52" id="Tzc-Aa-EoQ"/>
+                            <constraint firstItem="15F-EY-9H9" firstAttribute="centerX" secondItem="fW7-bA-5hU" secondAttribute="centerX" id="Ur9-h6-aGN"/>
+                            <constraint firstItem="15F-EY-9H9" firstAttribute="leading" secondItem="Qj8-yK-q4p" secondAttribute="leading" constant="270" id="VvS-7b-R0v"/>
+                            <constraint firstItem="9MO-dC-UeH" firstAttribute="top" secondItem="S7U-8A-NZ4" secondAttribute="bottom" constant="30" id="iZ9-LZ-dPq"/>
+                            <constraint firstItem="S7U-8A-NZ4" firstAttribute="top" secondItem="AfH-JN-rIH" secondAttribute="bottom" constant="12" id="qkb-dJ-N7D"/>
+                            <constraint firstItem="fW7-bA-5hU" firstAttribute="centerX" secondItem="9MO-dC-UeH" secondAttribute="centerX" id="tVr-mM-yjH"/>
+                            <constraint firstItem="AfH-JN-rIH" firstAttribute="centerX" secondItem="S7U-8A-NZ4" secondAttribute="centerX" id="xCc-Yj-qgA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGY-u0-ulu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="237"/>
+        </scene>
+        <!--termsConditionsViewController-->
+        <scene sceneID="J26-Ij-ELY">
+            <objects>
+                <viewController id="OTk-lq-lF0" userLabel="termsConditionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9NW-IJ-DKq"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCO-wK-6W3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nzy-RF-WRG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tgo-Eo-t7w">
+                                <rect key="frame" x="20" y="72" width="560" height="508"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. 
+
+
+By accessing or using the Stealfie service, or any applications (including mobile applications) made available by Stealfie (together, the "Service"), however accessed, you agree to be bound by these terms of use ("Terms of Use"). The Service is owned or controlled by SciFly Studios, (“SciFly Studios"). These Terms of Use affect your legal rights and obligations. If you do not agree to be bound by all of these Terms of Use, do not access or use the Service.
+
+Basic Terms
+
+1. You must be at least 13 years old to use the Service.
+
+2. You must not defame, stalk, bully, abuse, harass, threaten, impersonate or intimidate people or entities and you must not post private or confidential information via the Service, including, without limitation, your or any other person's credit card information, social security or alternate national identity numbers, non-public phone numbers or non-public email addresses.
+
+3. You are solely responsible for your conduct and any data, text, files, information, usernames, images, graphics, photos, profiles, audio and video clips, sounds, musical works, works of authorship, applications, links and other content or materials (collectively, "Content") that you submit, post or display on or via the Service.
+
+4. There may be links from the Service, or from communications you receive from the Service, to third-party web sites or features. There may also be links to third-party web sites or features in images or comments within the Service. The Service also includes third-party content that we do not control, maintain or endorse. Functionality on the Service may also permit interactions between the Service and a third-party web site or feature, including applications that connect the Service or your profile on the Service with a third-party web site or feature. For example, the Service may include a feature that enables you to share Content from the Service or your Content with a third party, which may be publicly posted on that third party's service or application. Using this functionality typically requires you to login to your account on the third-party service and you do so at your own risk. Stealfie does not control any of these third-party web services or any of their content. You expressly acknowledge and agree that Stealfie is in no way responsible or liable for any such third-party services or features. 
+
+YOUR CORRESPONDENCE AND BUSINESS DEALINGS WITH THIRD PARTIES FOUND THROUGH THE SERVICE ARE SOLELY BETWEEN YOU AND THE THIRD PARTY. 
+
+You may choose, at your sole and absolute discretion and risk, to use applications that connect the Service or your profile on the Service with a third-party service (each, an "Application") and such Application may interact with, connect to or gather and/or pull information from and to your Service profile. By using such Applications, you acknowledge and agree to the following: (i) if you use an Application to share information, you are consenting to information about your profile on the Service being shared; (ii) your use of an Application may cause personally identifying information to be publicly disclosed and/or associated with you, even if Stealfie has not itself provided such information; and (iii) your use of an Application is at your own option and risk, and you will hold Stealfie harmless for activity related to the Application.
+
+Rights
+
+1. Stealfie does not claim ownership of any Content that you post on or through the Service. Instead, you hereby grant to Stealfie a non-exclusive, fully paid and royalty-free, transferable, sub-licensable, worldwide license to use the Content that you post on or through the Service, subject to the Service's Privacy Policy, available here https://danamartensmfadt.wordpress.com/stealfie-privacy-policy/.
+
+2. Some of the Service is supported by advertising revenue and may display advertisements and promotions, and you hereby agree that Stealfie may place such advertising and promotions on the Service or on, about, or in conjunction with your Content. The manner, mode and extent of such advertising and promotions are subject to change without specific notice to you.
+
+3. You acknowledge that we may not always identify paid services, sponsored content, or commercial communications as such.
+
+4. You represent and warrant that: (i) you own the Content posted by you on or through the Service or otherwise have the right to grant the rights and licenses set forth in these Terms of Use; (ii) the posting and use of your Content on or through the Service does not violate, misappropriate or infringe on the rights of any third party, including, without limitation, privacy rights, publicity rights, copyrights, trademark and/or other intellectual property rights; (iii) you agree to pay for all royalties, fees, and any other monies owed by reason of Content you post on or through the Service; and (iv) you have the legal right and capacity to enter into these Terms of Use in your jurisdiction.
+
+5. The Service contains content owned or licensed by Stealfie (“Stealfie Content”). Stealfie Content is protected by copyright, trademark, patent, trade secret and other laws, and, as between you and Stealfie, Stealfie owns and retains all rights in the Stealfie Content and the Service. You will not remove, alter or conceal any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Stealfie Content and you will not reproduce, modify, adapt, prepare derivative works based on, perform, display, publish, distribute, transmit, broadcast, sell, license or otherwise exploit the Stealfie Content.
+
+6. The Stealfie name and logo are trademarks of Stealfie, and may not be copied, imitated or used, in whole or in part, without the prior written permission of Stealfie. In addition, all page headers, custom graphics, button icons and scripts are service marks, trademarks and/or trade dress of Stealfie, and may not be copied, imitated or used, in whole or in part, without prior written permission from Stealfie.
+
+7. Stealfie reserves the right to remove any Content from the Service for any reason, without prior notice. Content removed from the Service may continue to be stored by Stealfie, including, without limitation, in order to comply with certain legal obligations, but may not be retrievable without a valid court order. Stealfie will not be liable to you for any modification, suspension, or discontinuation of the Services, or the loss of any Content. You also acknowledge that the Internet may be subject to breaches of security and that the submission of Content or other information may not be secure.
+
+8. You agree that Stealfie is not responsible for, and does not endorse, Content posted within the Service. Stealfie does not have any obligation to prescreen, monitor, edit, or remove any Content. If your Content violates these Terms of Use, you may bear legal responsibility for that Content.
+
+9. Except as otherwise described in the Service's Privacy Policy, as between you and Stealfie, any Content will be non-confidential and non-proprietary and we will not be liable for any use or disclosure of Content. You acknowledge and agree that your relationship with Stealfie is not a confidential, fiduciary, or other type of special relationship, and that your decision to submit any Content does not place Stealfie in a position that is any different from the position held by members of the general public, including with regard to your Content. None of your Content will be subject to any obligation of confidence on the part of Stealfie, and Stealfie will not be liable for any use or disclosure of any Content you provide.
+
+10. It is Stealfie's policy not to accept or consider content, information, ideas, suggestions or other materials other than those we have specifically requested and to which certain specific terms, conditions and requirements may apply. This is to avoid any misunderstandings if your ideas are similar to those we have developed or are developing independently. Accordingly, Stealfie does not accept unsolicited materials or ideas, and takes no responsibility for any materials or ideas so transmitted. If, despite our policy, you choose to send us content, information, ideas, suggestions, or other materials, you further agree that Stealfie is free to use any such content, information, ideas, suggestions or other materials, for any purposes whatsoever, including, without limitation, developing and marketing products and services, without any liability or payment of any kind to you.
+</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.5450980392" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tgo-Eo-t7w" secondAttribute="bottom" constant="20" symbolic="YES" id="TAs-j7-PGP"/>
+                            <constraint firstItem="tgo-Eo-t7w" firstAttribute="top" secondItem="9NW-IJ-DKq" secondAttribute="bottom" constant="8" symbolic="YES" id="bNe-az-eR0"/>
+                            <constraint firstItem="tgo-Eo-t7w" firstAttribute="leading" secondItem="nzy-RF-WRG" secondAttribute="leadingMargin" id="cJl-rZ-Grq"/>
+                            <constraint firstItem="tgo-Eo-t7w" firstAttribute="trailing" secondItem="nzy-RF-WRG" secondAttribute="trailingMargin" id="t3m-Kx-OVL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="2qg-ah-OGO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="QGA-EH-lbn">
+                            <color key="tintColor" red="0.1333333333" green="0.5450980392" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="7ML-mo-ISb" kind="presentation" id="ayz-GD-aSB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kma-P5-CJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="904"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ibp-2x-mTx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zpz-m2-VXW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cFl-Hg-DDO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OTk-lq-lF0" kind="relationship" relationship="rootViewController" id="1iJ-9o-j1I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wf3-Jr-gst" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="904"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q1L-zl-6R4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xhw-N3-w24" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="vPG-b1-zDy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mSS-0A-ayP" kind="relationship" relationship="rootViewController" id="zLi-3S-8wP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhY-MX-f6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="237"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backicon" width="20" height="32"/>
+        <image name="cameraicon" width="1000" height="1000"/>
+        <image name="cameraiconwhite" width="1000" height="1000"/>
+        <image name="filterimage" width="100" height="63"/>
+        <image name="shareicon" width="422" height="358"/>
+        <image name="stealfiecircle" width="362" height="330"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="V1R-TZ-vRL"/>
+        <segue reference="vc8-Yv-5QM"/>
+    </inferredMetricsTieBreakers>
+</document>
