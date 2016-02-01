@@ -1,4 +1,4 @@
-## OpenFrameworks Final Project - ComposeIt
+## OpenFrameworks Final Project - Sinosidal
 
 1. C++ OpenFrameworks project that lets you compose along to music with audio-reactive shapes with WiiRemote & Nunchuk. Full the on-screen instructions to play music, create & control shapes, and control values like volume and speed.
 
